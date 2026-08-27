@@ -229,7 +229,7 @@ PAGE = r'''<!doctype html>
     lightbox.onclick=()=>lightbox.classList.remove('show');
     addEventListener('keydown', event => { if(event.key==='Escape') lightbox.classList.remove('show'); if(event.key==='ArrowRight') showPage(current+1); if(event.key==='ArrowLeft') showPage(current-1); });
     const quiz=[
-      { question:'Какую игру мы впервые вместе играли в Roblox?', options:['Murderers vs Sheriffs Duels','Угадай мои числа','Слепой таймер'], correct:0, right:'Точно! Ты помнишь наше первое приключение в Roblox ♡', wrong:'Почти! Вспомни нашу самую первую игру…' },
+      { question:'Какую игру мы впервые вместе играли в Roblox?', options:['Murderers vs Sheriffs Duels','Guess My Number','Blind Timer'], correct:0, right:'Точно! Ты помнишь наше первое приключение в Roblox ♡', wrong:'Почти! Вспомни нашу самую первую игру…' },
       { question:'Кто первым начинает спорить?', options:['Я','Ты'], correct:0, right:'Вот именно. Но я всё равно первым иду мириться ♡', wrong:'Хм… кажется, ты знаешь этот ответ лучше меня 😄' },
       { question:'Когда мы посмотрим фильм вместе?', options:['Никогда','Как только ты выберешь фильм'], correct:1, right:'Договорились! Выбирай фильм — я уже приготовил место рядом с собой ♡', wrong:'Неверно. Всё зависит от одного очень важного выбора…' }
     ];
