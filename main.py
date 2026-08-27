@@ -111,6 +111,8 @@ PAGE = r'''<!doctype html>
     .quiz-complete p { color:#f8ded9; font-size:20px; }
     .break { padding:60px 20px; text-align:center; background:#fff1ed0f; border:1px solid #ffc5b935; border-radius:10px; }
     .break h2 { margin-bottom:10px; }
+    .music-title { font-size:clamp(20px,4vw,31px); letter-spacing:.16em; }
+    .music-subtitle { font-size:clamp(27px,4vw,41px); }
     .break p { color:#f8ded9; font-size:18px; }
     video { width:min(720px,100%); display:block; margin:30px auto 0; border-radius:6px; box-shadow:0 22px 50px #0d0710b8; background:#111; }
     .gallery { display:grid; grid-template-columns:1.2fr .8fr; gap:20px; }
@@ -148,7 +150,7 @@ PAGE = r'''<!doctype html>
 </head>
 <body>
   <div class="stars"></div><div class="scene-bg"><img id="scene-image" src="first.jpg" alt=""></div><div class="progress" id="progress"></div>
-  <div class="welcome" id="welcome"><div class="letter"><span class="seal">💌</span><div class="tag">Личное письмо для тебя</div><h2>У меня есть для тебя одна история</h2><p>Надень наушники, улыбнись и открой, когда будешь готова.</p><button id="open-story" type="button">Открыть письмо ♡</button></div></div>
+  <div class="welcome" id="welcome"><div class="letter"><span class="seal">💌</span><div class="tag">Личное письмо для тебя</div><h2>У меня есть для тебя одна история</h2><p>Улыбнись и открой, когда будешь готова.</p><button id="open-story" type="button">Открыть письмо ♡</button></div></div>
   <main id="story">
     <section class="page active" data-page data-bg="first.jpg">
       <header>
@@ -174,7 +176,7 @@ PAGE = r'''<!doctype html>
       <div class="words"><h2>Мы и Roblox</h2><p>Наша первая игра в Roblox. Кто бы мог подумать, что даже в виртуальном мире я буду счастлив проводить время именно с тобой.</p><p class="quote">Даже когда я проигрывал, я всё равно чувствовал себя победителем, потому что играл вместе с тобой.</p></div>
     </section>
     <section class="page break" data-page data-bg="morning.jpg">
-      <div class="tag">Музыкальная пауза</div><h2>Нажми ▶ </h2><p>Твой пианино-саундтрек — моя любимая часть этой истории.</p>
+      <div class="tag music-title">Музыкальная пауза</div><h2 class="music-subtitle">Нажми ▶</h2><p>Твой пианино-саундтрек — моя любимая часть этой истории.</p>
       <video controls preload="metadata" playsinline><source src="IMG_1935.MP4" type="video/mp4">Твой браузер не поддерживает видео.</video>
     </section>
     <section class="page chapter" data-page data-bg="movie.jpg">
